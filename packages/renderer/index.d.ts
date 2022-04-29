@@ -19,6 +19,7 @@ declare namespace ReactPDF {
   }
 
   interface DocumentProps {
+    children?: React.ReactNode;
     title?: string;
     author?: string;
     subject?: string;
@@ -39,6 +40,7 @@ declare namespace ReactPDF {
   class Document extends React.Component<DocumentProps> {}
 
   interface NodeProps {
+    children?: React.ReactNode;
     id?: string;
     style?: Style | Style[];
     /**
